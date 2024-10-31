@@ -43,7 +43,7 @@ Para crear, modificar y eliminar objetos de la base de datos, utilizamos los com
 ### Creación de tablas
 ```sql
 CREATE TABLE usuarios (
-    id INT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
     email VARCHAR(50) UNIQUE,
     edad INT CHECK (edad >= 18)
@@ -156,7 +156,7 @@ https://onecompiler.com/mysql
 
 ```sql
 CREATE TABLE clientes (
-  id INT PRIMARY KEY,
+  id INT PRIMARY AUTO_INCREMENT KEY,
   nombre VARCHAR(50),
   apellido VARCHAR(50),
   edad INT,
